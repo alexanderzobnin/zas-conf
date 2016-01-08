@@ -2,6 +2,7 @@
 ./stop_agents.sh
 
 # Restart redis instances
+echo 'Restarting redis instances'
 systemctl restart redis.service
 systemctl restart redis-6380.service
 
