@@ -1,4 +1,8 @@
 #! /bin/bash
 ./stop_agents.sh
-systemctl restart redis
+
+# Restart redis instances
+systemctl restart redis.service
+systemctl restart redis-6380.service
+
 ./start_agents.sh
